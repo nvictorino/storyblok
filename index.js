@@ -6,7 +6,7 @@ const app = express()
 app.use('/public', express.static('public'))
 
 app.get('/*', function(req, res) {
-  res.sendFile(__dirname + '/test.html')
+  res.sendFile(__dirname + '/home.html')
 })
 
 app.listen(8080, function() {

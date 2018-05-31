@@ -29,7 +29,7 @@ renderBlocks = function(data) {
 }
 
 components = {
-  situation_report(blok) {
+  page(blok) {
     return blok.body.map((column) => { return components[column.component](column) }).join('')
   },
   teaser(blok) {
