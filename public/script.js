@@ -30,7 +30,8 @@ renderBlocks = function(data) {
 
 components = {
   page(blok) {
-    return blok.body.map((column) => { return components[column.component](column) }).join('')
+    return blok.body.map((column) => { return components[column.component](column) }).join('');
+    console.log(components[column.component](column));
   },
   teaser(blok) {
     return `${blok._editable}
